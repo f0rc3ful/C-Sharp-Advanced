@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Diagonal Difference", "Multidimensional Arrays Exercise\1. Diagonal Difference.csproj", "{376B4ABF-A076-4B68-9C77-9517D2138388}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Diagonal Difference", "Multidimensional Arrays Exercise\1. Diagonal Difference.csproj", "{376B4ABF-A076-4B68-9C77-9517D2138388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Squares in Matrix", "2. Squares in Matrix\2. Squares in Matrix.csproj", "{EE055A10-8529-4222-AFC3-4541A6E9AC7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Squares in Matrix", "2. Squares in Matrix\2. Squares in Matrix.csproj", "{EE055A10-8529-4222-AFC3-4541A6E9AC7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Maximal Sum", "3. Maximal Sum\3. Maximal Sum.csproj", "{A43D612A-785D-4381-BA4B-5810BB00050C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Matrix Shuffling", "4. Matrix Shuffling\4. Matrix Shuffling.csproj", "{47487045-E13B-40CA-83A6-6C31DDF7C723}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{EE055A10-8529-4222-AFC3-4541A6E9AC7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE055A10-8529-4222-AFC3-4541A6E9AC7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE055A10-8529-4222-AFC3-4541A6E9AC7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A43D612A-785D-4381-BA4B-5810BB00050C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43D612A-785D-4381-BA4B-5810BB00050C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43D612A-785D-4381-BA4B-5810BB00050C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43D612A-785D-4381-BA4B-5810BB00050C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47487045-E13B-40CA-83A6-6C31DDF7C723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47487045-E13B-40CA-83A6-6C31DDF7C723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47487045-E13B-40CA-83A6-6C31DDF7C723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47487045-E13B-40CA-83A6-6C31DDF7C723}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
