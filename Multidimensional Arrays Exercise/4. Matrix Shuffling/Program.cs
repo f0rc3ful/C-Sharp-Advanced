@@ -38,15 +38,15 @@ class Program
                 Console.WriteLine("Invalid input!");
                 continue;
             }
-            string temporary = matrix[row2,col2];
-            matrix[row2, col2] = matrix[row1,col1];
+            string temporary = matrix[row2, col2];
+            matrix[row2, col2] = matrix[row1, col1];
             matrix[row1, col1] = temporary;
 
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < cols; j++)
                 {
-                    Console.Write(matrix[i,j] + " ");
+                    Console.Write(matrix[i, j] + " ");
                 }
                 Console.WriteLine();
             }
