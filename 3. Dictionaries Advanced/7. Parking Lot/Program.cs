@@ -32,10 +32,3 @@ class Program
 
     }
 }
-
-
-//CA9999TT
-
-//CA2844AA
-//CA9876HH
-//CA2822UU
