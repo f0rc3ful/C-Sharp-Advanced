@@ -12,9 +12,7 @@ class Program
         { 
             names.Add(Console.ReadLine());
         }
-        foreach (string name in names) 
-        {
-            Console.WriteLine(name);
-        }
+
+        Console.WriteLine(string.Join("\n", names));
     }
 }
