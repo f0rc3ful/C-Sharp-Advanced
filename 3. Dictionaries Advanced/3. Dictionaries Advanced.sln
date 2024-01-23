@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Count Same Values in Array", "3. Dictionaries Advanced\1. Count Same Values in Array.csproj", "{3886C3B9-51B1-4B9E-BF63-D042850301EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Count Same Values in Array", "3. Dictionaries Advanced\1. Count Same Values in Array.csproj", "{3886C3B9-51B1-4B9E-BF63-D042850301EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Average Student Grades", "2. Average Student Grades\2. Average Student Grades.csproj", "{AAC27ADF-E0F2-4C48-B6FC-8F04CFD9E65A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Average Student Grades", "2. Average Student Grades\2. Average Student Grades.csproj", "{AAC27ADF-E0F2-4C48-B6FC-8F04CFD9E65A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Largest 3 Numbers", "3. Largest 3 Numbers\3. Largest 3 Numbers.csproj", "{DC6A72FC-D228-4012-A840-BC8C0DEA2DA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Largest 3 Numbers", "3. Largest 3 Numbers\3. Largest 3 Numbers.csproj", "{DC6A72FC-D228-4012-A840-BC8C0DEA2DA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingDictionaries", "SortingDictionaries\SortingDictionaries.csproj", "{2BAAB459-137A-4416-B659-BBEDDB69DA05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingDictionaries", "SortingDictionaries\SortingDictionaries.csproj", "{2BAAB459-137A-4416-B659-BBEDDB69DA05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Record Unique Names", "6. Record Unique Names\6. Record Unique Names.csproj", "{8A01B658-8F4E-4C83-AD55-E7B1379EE7E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Parking Lot", "7. Parking Lot\7. Parking Lot.csproj", "{33B7394D-5C2E-49F8-B64A-36611139D0B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. SoftUni Party", "8. SoftUni Party\8. SoftUni Party.csproj", "{B929A914-94FB-4426-BD73-90B5749AACB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Product Shop", "4. Product Shop\4. Product Shop.csproj", "{96101C71-C2F5-4AFC-9E1C-D7B94426239D}"
 EndProject
@@ -37,14 +43,18 @@ Global
 		{2BAAB459-137A-4416-B659-BBEDDB69DA05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BAAB459-137A-4416-B659-BBEDDB69DA05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BAAB459-137A-4416-B659-BBEDDB69DA05}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96101C71-C2F5-4AFC-9E1C-D7B94426239D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96101C71-C2F5-4AFC-9E1C-D7B94426239D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96101C71-C2F5-4AFC-9E1C-D7B94426239D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96101C71-C2F5-4AFC-9E1C-D7B94426239D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{276FC3D0-1E9D-4DDE-9D4A-8840004AECEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{276FC3D0-1E9D-4DDE-9D4A-8840004AECEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{276FC3D0-1E9D-4DDE-9D4A-8840004AECEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{276FC3D0-1E9D-4DDE-9D4A-8840004AECEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A01B658-8F4E-4C83-AD55-E7B1379EE7E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A01B658-8F4E-4C83-AD55-E7B1379EE7E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A01B658-8F4E-4C83-AD55-E7B1379EE7E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A01B658-8F4E-4C83-AD55-E7B1379EE7E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B7394D-5C2E-49F8-B64A-36611139D0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B7394D-5C2E-49F8-B64A-36611139D0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B7394D-5C2E-49F8-B64A-36611139D0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B7394D-5C2E-49F8-B64A-36611139D0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B929A914-94FB-4426-BD73-90B5749AACB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B929A914-94FB-4426-BD73-90B5749AACB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B929A914-94FB-4426-BD73-90B5749AACB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B929A914-94FB-4426-BD73-90B5749AACB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
