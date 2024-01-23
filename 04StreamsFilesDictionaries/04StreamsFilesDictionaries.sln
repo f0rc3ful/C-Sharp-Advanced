@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04StreamsFilesDictionaries", "04StreamsFilesDictionaries\04StreamsFilesDictionaries.csproj", "{0137CB2B-9FB4-4027-9064-F7BBCEB85DCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. WordCount", "04StreamsFilesDictionaries\03. WordCount.csproj", "{0137CB2B-9FB4-4027-9064-F7BBCEB85DCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
