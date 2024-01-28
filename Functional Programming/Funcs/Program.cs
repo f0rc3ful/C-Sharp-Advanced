@@ -5,35 +5,22 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Keep on entering integers to see if they are even or odd numbers. \nOnce you are done, you can enter \"done\" (case insensitive) and the program will end.");
-        string input;
-        //Func<int, bool> isOdd = x => x % 2 == 0;
-        Func<int, bool> funcOddOrNot = isOdd;
-        while ((input = Console.ReadLine()).ToLower() != "end")
-        {
-            if (!int.TryParse(input, out int result))
-            {
-                Console.WriteLine("Your input is not an integer, please enter a valid input:");
-            }
-            else if (isOdd(int.Parse(input)))
-            {
-                Console.WriteLine($"{input} is an even number");
-            }
-            //else if (isOdd(int.Parse(input)))
-            //{
-            //    Console.WriteLine($"{input} is an even number");
-            //}
-            else
-            {
-                Console.WriteLine($"{input} is not an odd number.");
-            }
-        }
-        Console.WriteLine("Program closing...");
+        Func<int, int, int> func = Multiply;
+        Console.WriteLine("Please enter 2 integers that you want to manipulate, separated by a comma:");
+        int[] input = Console.ReadLine().Split(", ").Select(int.Parse).ToArray();
+        PrintResult(input[0], input[1], func);
+    }
 
-        static bool isOdd(int x)
-        {
-            return x % 2 == 0;
-        }
+    static void PrintResult(int a, int b, Func<int, int, int> func)
+    {
+        int result = func(a, b);
+        Console.WriteLine(new string('=', 50));
+        Console.WriteLine($"Result: {result}");
+        Console.WriteLine(new string('=', 50));
+    }
 
+        static int Multiply(int a, int b)
+    {
+        return a * b;
     }
 }
