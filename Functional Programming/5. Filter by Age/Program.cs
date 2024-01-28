@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
+using System.Linq;
+
 class Person
 {
     public string Name { get; set; }
@@ -25,10 +28,26 @@ class Program
             Person person = new Person(name, age);
             people.Add(person);
         }
-        Console.ReadLine();
-        string condition = Console.ReadLine(); //•	Condition - "younger"(<) or "older"(>=)
-        int ageThreshold = int.Parse(Console.ReadLine()); //•	Age threshold -integer\
-        string format = Console.ReadLine(); //•	Format - "name", "age" or "name age"\
-        
+
+        string condition = Console.ReadLine(); // "younger"(<) or "older"(>=)
+        int ageThreshold = int.Parse(Console.ReadLine()); // age threshold - integer\
+        string outputFormat = Console.ReadLine(); // format - "name", "age" or "name age"\
+
+        Func<Person, bool> filter = p => p.Age > 0;
+        if (condition == "younger")
+        { 
+            filter = p => p.Age < ageThreshold;
+        }
+        else if (condition == "older")
+        {
+            filter = p => p.Age >= ageThreshold;
+        }
+
+        var filteredPeople = people.Where(filter).ToList();
+
+        foreach (Person person in people)
+        {
+            Console.WriteLine($"{person.Name} -> {person.Age}");
+        }
     }
 }
