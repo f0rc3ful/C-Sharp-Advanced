@@ -35,7 +35,7 @@ class Program
 
         Func<Person, bool> filter = p => p.Age > 0;
         if (condition == "younger")
-        { 
+        {
             filter = p => p.Age < ageThreshold;
         }
         else if (condition == "older")
@@ -43,11 +43,24 @@ class Program
             filter = p => p.Age >= ageThreshold;
         }
 
-        var filteredPeople = people.Where(filter).ToList();
+        var filteredPeople = people.Where(filter);
 
-        foreach (Person person in people)
+        Func<Person, string> printFunc = p => p.Name + " - " + p.Age;
+        if (outputFormat == "name")
         {
-            Console.WriteLine($"{person.Name} -> {person.Age}");
+            printFunc = p => p.Name;
+        }
+        else if (outputFormat == "age")
+        {
+            printFunc = p => p.Age.ToString();
+        }
+
+        var result = filteredPeople.Select(printFunc);
+
+        foreach (var person in result)
+        {
+            Console.WriteLine(person);
         }
     }
+    
 }
