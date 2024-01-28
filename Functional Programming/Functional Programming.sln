@@ -13,11 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Count Uppercase Words", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Add VAT", "4. Add VAT\4. Add VAT.csproj", "{36B5FC6C-966D-45DF-B4CB-38B5BDA0404B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funcs", "Funcs\Funcs.csproj", "{C846DF89-6D88-40EE-BC8A-23D0A098F783}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funcs - why bother using funcs", "Funcs\Funcs - why bother using funcs.csproj", "{C846DF89-6D88-40EE-BC8A-23D0A098F783}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funcs2", "Funcs2\Funcs2.csproj", "{BF75D992-B35A-4D1D-B45B-0E06F12FC7D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Filter by Age", "5. Filter by Age\5. Filter by Age.csproj", "{577A8ACA-5B01-4E46-9E1A-8EF134E4A84C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Action as a delegate", "Action as a delegate\Action as a delegate.csproj", "{9A20063A-3BC4-47B7-8787-99BE53538A06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Where as a method", "Where as a method\Where as a method.csproj", "{7386FCF2-E4B2-490C-86F8-CFEBC79999BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{577A8ACA-5B01-4E46-9E1A-8EF134E4A84C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{577A8ACA-5B01-4E46-9E1A-8EF134E4A84C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{577A8ACA-5B01-4E46-9E1A-8EF134E4A84C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A20063A-3BC4-47B7-8787-99BE53538A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A20063A-3BC4-47B7-8787-99BE53538A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A20063A-3BC4-47B7-8787-99BE53538A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A20063A-3BC4-47B7-8787-99BE53538A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7386FCF2-E4B2-490C-86F8-CFEBC79999BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7386FCF2-E4B2-490C-86F8-CFEBC79999BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7386FCF2-E4B2-490C-86F8-CFEBC79999BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7386FCF2-E4B2-490C-86F8-CFEBC79999BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

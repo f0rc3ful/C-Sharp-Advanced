@@ -5,10 +5,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Func<int, int, int> func = Multiply;
-        Console.WriteLine("Please enter 2 integers that you want to manipulate, separated by a comma:");
-        int[] input = Console.ReadLine().Split(", ").Select(int.Parse).ToArray();
-        PrintResult(input[0], input[1], func);
+        Func<int, int, int> multiplier = Multiply;
+        Func<int, int, int> add = Sum;
+        PrintResult(2, 3, Multiply); // call multiplier/Multiply or add/Sum and instantly change funcionality
     }
 
     static void PrintResult(int a, int b, Func<int, int, int> func)
@@ -19,8 +18,13 @@ class Program
         Console.WriteLine(new string('=', 50));
     }
 
-        static int Multiply(int a, int b)
+    static int Multiply(int a, int b)
     {
         return a * b;
+    }
+
+    static int Sum(int a, int b)
+    {
+        return a + b;
     }
 }
