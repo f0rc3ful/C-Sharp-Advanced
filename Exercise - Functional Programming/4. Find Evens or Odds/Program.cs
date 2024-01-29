@@ -1,41 +1,33 @@
 ﻿using System;
 using System.Linq;
+using System.Runtime.InteropServices;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Func<string, string, string> evensOrodds = EvensOrOdds;
-        string range = Console.ReadLine();
-        string format = Console.ReadLine();
-        string output = evensOrodds(range, format);
-        Console.WriteLine(output);
+        int[] range = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+        string condition = Console.ReadLine();
+        List<int> numbers = new List<int>();
+        Func<int[], List<int>> listFiller = Filler;
+        numbers = Filler(range);
+        Func<int, bool> function = x => x % 2 == 0;
+        if (condition == "odd")
+        {
+            function = x => x % 2 == 1;
+        }
+        numbers = numbers.Where(function).ToList();
+        Action<List<int>> printer = list => Console.WriteLine(string.Join(" ", numbers));
+        printer(numbers);
     }
 
-    static string EvensOrOdds(string input, string format)
+    static List<int> Filler(int[] range)
     {
         List<int> numbers = new List<int>();
-        int[] range = input.Split(" ").Select(int.Parse).ToArray();
-        int startOfRange = range[0];
-        int endOfRange = range[1];
-        for (int i = startOfRange; i <= endOfRange; i++)
-        {
-            if (format == "odd")
-            {
-                if (i % 2 == 1)
-                {
-                    numbers.Add(i);
-                }
-            }
-            else if (format == "even")
-            {
-                if (i % 2 == 0)
-                {
-                    numbers.Add(i);
-                }
-            }
+        for (int i = range[0]; i <= range[1]; i++)
+        { 
+            numbers.Add(i);
         }
-        string output = string.Join(" ", numbers);
-        return output;
+        return numbers;
     }
 }
