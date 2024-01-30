@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Reverse and Exclude", "6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Predicate for Names", "7. Predicate for Names\7. Predicate for Names.csproj", "{16BE2111-823C-4D65-ADA4-F3DC99F0714E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. List of Predicates", "8. List of Predicates\8. List of Predicates.csproj", "{343A1FE3-326B-4545-858A-9D7B14F2A690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hackerrank", "hackerrank\hackerrank.csproj", "{380A548A-B9A2-4A8A-AFD7-E573B35214CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{16BE2111-823C-4D65-ADA4-F3DC99F0714E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16BE2111-823C-4D65-ADA4-F3DC99F0714E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16BE2111-823C-4D65-ADA4-F3DC99F0714E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{343A1FE3-326B-4545-858A-9D7B14F2A690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{343A1FE3-326B-4545-858A-9D7B14F2A690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{343A1FE3-326B-4545-858A-9D7B14F2A690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{343A1FE3-326B-4545-858A-9D7B14F2A690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380A548A-B9A2-4A8A-AFD7-E573B35214CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380A548A-B9A2-4A8A-AFD7-E573B35214CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380A548A-B9A2-4A8A-AFD7-E573B35214CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380A548A-B9A2-4A8A-AFD7-E573B35214CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
