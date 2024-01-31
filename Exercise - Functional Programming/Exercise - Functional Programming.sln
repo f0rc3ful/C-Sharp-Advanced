@@ -19,7 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Predicate for Names", "7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. List of Predicates", "8. List of Predicates\8. List of Predicates.csproj", "{343A1FE3-326B-4545-858A-9D7B14F2A690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hackerrank", "hackerrank\hackerrank.csproj", "{380A548A-B9A2-4A8A-AFD7-E573B35214CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsSubsequence", "hackerrank\IsSubsequence.csproj", "{380A548A-B9A2-4A8A-AFD7-E573B35214CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Move Zeroes", "Move Zeroes\Move Zeroes.csproj", "{20E177C4-E1E6-4EA2-9EA4-E6A6B748F3B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valid Parenthesis", "Valid Parenthesis\Valid Parenthesis.csproj", "{92ADCD20-0B83-4AAB-A372-BE3AFD2A6DC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{380A548A-B9A2-4A8A-AFD7-E573B35214CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{380A548A-B9A2-4A8A-AFD7-E573B35214CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{380A548A-B9A2-4A8A-AFD7-E573B35214CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E177C4-E1E6-4EA2-9EA4-E6A6B748F3B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E177C4-E1E6-4EA2-9EA4-E6A6B748F3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E177C4-E1E6-4EA2-9EA4-E6A6B748F3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E177C4-E1E6-4EA2-9EA4-E6A6B748F3B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92ADCD20-0B83-4AAB-A372-BE3AFD2A6DC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92ADCD20-0B83-4AAB-A372-BE3AFD2A6DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92ADCD20-0B83-4AAB-A372-BE3AFD2A6DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92ADCD20-0B83-4AAB-A372-BE3AFD2A6DC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

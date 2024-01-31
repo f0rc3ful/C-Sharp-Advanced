@@ -16,47 +16,49 @@ class Result
 {
     static void Main(string[] args)
     {
-        string str1 = Console.ReadLine();
-        string str2 = Console.ReadLine();
-        string output = GcdOfStrings(str1, str2);
-        Console.WriteLine(output);
+        string s = Console.ReadLine();
+        string t = Console.ReadLine();
+        Console.WriteLine(IsSubsequence(s, t));
     }
-    static string GcdOfStrings(string str1, string str2)
+    static bool IsSubsequence(string s, string t)
     {
-        string output = "";
-        string shorter;
-        string longer;
-        if (str1.Length > str2.Length)
+        string shorter1;
+        string longer1;
+        if (s == "")
         {
-            shorter = str2;
-            longer = str1;
+            return true;
+        }
+        else if (t == "")
+        {
+            return false;
+        }
+        if (s.Length > t.Length)
+        {
+            shorter1 = t;
+            longer1 = s;
         }
         else
         {
-            shorter = str1;
-            longer = str2;
+            shorter1 = s;
+            longer1 = t;
         }
-        List<char> chars1= new List<char>();
-        for (int i = 0; i < shorter.Length; i++)
+        List<char> shorter = shorter1.ToList();
+        List<char> longer = longer1.ToList();
+        for (int i = 0; i < longer.Count; i++)
         {
-            if (!chars1.Contains(shorter[i]))
+            if (!(shorter.Contains(longer[i])))
             {
-                chars1.Add(shorter[i]);
+                longer.Remove(longer[i]);
+                i--;
             }
         }
-        List<char> chars2 = new List<char>();
-        for (int i = 0; i < longer.Length; i++)
+        string shorterStr = string.Join("", shorter);
+        string longerStr = string.Join("", longer);
+        if (longerStr.Contains(shorterStr))
         {
-            if (!chars2.Contains(longer[i]))
-            {
-                chars2.Add(longer[i]);
-            }
+            return true;
         }
-        if (chars1.Count > 1 && chars2.Count > 1 && chars1 == chars2)
-        {
-            output = string.Join("", chars1);
-        }
-        return output;
+        return shorterStr == longerStr; 
     }
 
 }
