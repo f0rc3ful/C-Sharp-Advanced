@@ -14,52 +14,37 @@ using System;
 
 class Result
 {
-
-    /*
-     * Complete the 'compareTriplets' function below.
-     *
-     * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts following parameters:
-     *  1. INTEGER_ARRAY a
-     *  2. INTEGER_ARRAY b
-     */
-
-    public static List<int> compareTriplets(List<int> alice, List<int> bob)
+    static void Main(string[] args)
     {
-        int a = 0;
-        int b = 0;
-        for (int i = 0; i < alice.Count; i++)
+        int n = int.Parse(Console.ReadLine());
+        List<List<int>> ints= new List<List<int>>();
+        for (int i = 0; i < n; i++)
         {
-            if (alice[i] > bob[i])
+            for (int j = 0; j < arr.Count; j++)
             {
-                a++;
+                dig1 += arr[i][j];
             }
-            else if (alice[i] < bob[i])
+            
+        }
+    }
+    public static int diagonalDifference(List<List<int>> arr)
+    {
+        int dig1 = 0;
+        int dig2 = 0;
+        for (int i = 0; i < arr.Count; i++)
+        {
+            for (int j1 = 0; j1 < arr.Count; j1++)
             {
-                b++;
+                dig1 += arr[i][j1];
+            }
+            for (int j2 = arr.Count - 1; j2 >= 0; j2--)
+            {
+                dig2 += arr[i][j2];
             }
         }
-        List<int> ab = new List<int> { a, b };
-        return ab;
+        return Math.Abs(dig1 - dig2);
     }
 
 }
 
-class Solution
-{
-    public static void Main(string[] args)
-    {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
-        List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
-
-        List<int> b = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(bTemp => Convert.ToInt32(bTemp)).ToList();
-
-        List<int> result = Result.compareTriplets(a, b);
-
-        textWriter.WriteLine(String.Join(" ", result));
-
-        textWriter.Flush();
-        textWriter.Close();
-    }
-}
