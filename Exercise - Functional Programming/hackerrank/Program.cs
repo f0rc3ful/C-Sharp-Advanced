@@ -16,33 +16,47 @@ class Result
 {
     static void Main(string[] args)
     {
-        int n = int.Parse(Console.ReadLine());
-        List<List<int>> ints= new List<List<int>>();
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 0; j < arr.Count; j++)
-            {
-                dig1 += arr[i][j];
-            }
-            
-        }
+        string str1 = Console.ReadLine();
+        string str2 = Console.ReadLine();
+        string output = GcdOfStrings(str1, str2);
+        Console.WriteLine(output);
     }
-    public static int diagonalDifference(List<List<int>> arr)
+    static string GcdOfStrings(string str1, string str2)
     {
-        int dig1 = 0;
-        int dig2 = 0;
-        for (int i = 0; i < arr.Count; i++)
+        string output = "";
+        string shorter;
+        string longer;
+        if (str1.Length > str2.Length)
         {
-            for (int j1 = 0; j1 < arr.Count; j1++)
+            shorter = str2;
+            longer = str1;
+        }
+        else
+        {
+            shorter = str1;
+            longer = str2;
+        }
+        List<char> chars1= new List<char>();
+        for (int i = 0; i < shorter.Length; i++)
+        {
+            if (!chars1.Contains(shorter[i]))
             {
-                dig1 += arr[i][j1];
-            }
-            for (int j2 = arr.Count - 1; j2 >= 0; j2--)
-            {
-                dig2 += arr[i][j2];
+                chars1.Add(shorter[i]);
             }
         }
-        return Math.Abs(dig1 - dig2);
+        List<char> chars2 = new List<char>();
+        for (int i = 0; i < longer.Length; i++)
+        {
+            if (!chars2.Contains(longer[i]))
+            {
+                chars2.Add(longer[i]);
+            }
+        }
+        if (chars1.Count > 1 && chars2.Count > 1 && chars1 == chars2)
+        {
+            output = string.Join("", chars1);
+        }
+        return output;
     }
 
 }
