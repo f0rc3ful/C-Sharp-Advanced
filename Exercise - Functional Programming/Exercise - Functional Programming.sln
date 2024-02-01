@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Move Zeroes", "Move Zeroes\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valid Parenthesis", "Valid Parenthesis\Valid Parenthesis.csproj", "{92ADCD20-0B83-4AAB-A372-BE3AFD2A6DC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "389. Find the Difference", "389. Find the Difference\389. Find the Difference.csproj", "{EA668DF6-2A57-44E6-AD51-D4098CD4F518}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{92ADCD20-0B83-4AAB-A372-BE3AFD2A6DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92ADCD20-0B83-4AAB-A372-BE3AFD2A6DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92ADCD20-0B83-4AAB-A372-BE3AFD2A6DC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA668DF6-2A57-44E6-AD51-D4098CD4F518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA668DF6-2A57-44E6-AD51-D4098CD4F518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA668DF6-2A57-44E6-AD51-D4098CD4F518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA668DF6-2A57-44E6-AD51-D4098CD4F518}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
