@@ -55,7 +55,7 @@ namespace CarManufacturer
 
             foreach (var car in carsList)
             {
-                car.FuelQuantity = car.FuelQuantity - 20 * car.FuelConsumption;
+                car.FuelQuantity = car.FuelQuantity - 0.2 * car.FuelConsumption;
             }
             carsList = carsList
                 .Where(car => car.Year >= 2017 && car.Engine.HorsePower > 330 && car.Tires.Sum(tire => tire.Pressure) >= 9 && car.Tires.Sum(tire => tire.Pressure) <= 10)
@@ -64,7 +64,7 @@ namespace CarManufacturer
             
             foreach (var car in carsList)
             {
-                Console.WriteLine($"Make: {car.Make}\nModel: {car.Model}\nYear: {car.Year}\nHorsePower: {car.Engine.HorsePower}\nFuelQuantity: {car.FuelQuantity}");
+                Console.WriteLine($"Make: {car.Make}\nModel: {car.Model}\nYear: {car.Year}\nHorsePowers: {car.Engine.HorsePower}\nFuelQuantity: {car.FuelQuantity}");
 
             }
 
