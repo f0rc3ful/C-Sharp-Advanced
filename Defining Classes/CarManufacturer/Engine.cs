@@ -15,8 +15,8 @@ namespace CarManufacturer
 
         public Engine(int horsePower, double cubicCapacity)
         {
-            this.horsePower = horsePower;
-            this.cubicCapacity = cubicCapacity;
+            this.HorsePower = horsePower;
+            this.CubicCapacity = cubicCapacity;
         }
     }
 }
