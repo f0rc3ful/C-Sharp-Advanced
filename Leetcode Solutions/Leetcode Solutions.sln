@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "28. Find the Index of the First Occurence in a String", "Leetcode Solutions\28. Find the Index of the First Occurence in a String.csproj", "{A9492A16-9C31-4EBA-8CF2-4C7FB20592E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "66. Plus One", "66. Plus One\66. Plus One.csproj", "{F496B192-C772-4AC9-80AF-7827161BA07D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9492A16-9C31-4EBA-8CF2-4C7FB20592E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9492A16-9C31-4EBA-8CF2-4C7FB20592E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9492A16-9C31-4EBA-8CF2-4C7FB20592E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9492A16-9C31-4EBA-8CF2-4C7FB20592E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F496B192-C772-4AC9-80AF-7827161BA07D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F496B192-C772-4AC9-80AF-7827161BA07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F496B192-C772-4AC9-80AF-7827161BA07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F496B192-C772-4AC9-80AF-7827161BA07D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF808D0B-6637-4603-9B7E-B5F2774E4BDE}
+	EndGlobalSection
+EndGlobal
