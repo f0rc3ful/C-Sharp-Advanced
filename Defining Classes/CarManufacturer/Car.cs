@@ -5,14 +5,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace CarManufacturer
 {
     public class Car
     {
-        private Engine engine;
-        private Tire[] tires;
-
         private string make;
         public string Make
         {
@@ -43,9 +39,30 @@ namespace CarManufacturer
             set { this.fuelQuantity = value; }
         }
 
-        public double FuelConsumption { get; set; }
-        public Engine Engine { get; set; }
-        public Tire[] Tires { get; set; }
+        private double fuelConsumption;
+
+        public double FuelConsumption
+        {
+            get { return fuelConsumption; }
+            set { fuelConsumption = value; }
+        }
+
+        private Engine engine;
+
+        public Engine Engine
+        {
+            get { return engine; }
+            set { engine = value; }
+        }
+
+        private Tire[] tires;
+
+        public Tire[] Tires
+        {
+            get { return tires; }
+            set { tires = value; }
+        }
+
         public Car()
         {
             this.make = "VW";
