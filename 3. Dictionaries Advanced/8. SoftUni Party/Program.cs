@@ -21,6 +21,7 @@ class Program
         }
 
         Console.WriteLine(guests.Count);
+        guests = guests.OrderBy(x => x).ToHashSet();
         if (guests.Count > 0)
         {
             Console.WriteLine(string.Join("\n", guests));
