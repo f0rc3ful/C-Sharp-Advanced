@@ -38,5 +38,20 @@ namespace CustomLinkedList
             Head.Previous = newNode;
             Head = newNode;
         }
+
+        public void RemoveFirst() 
+        {
+            Node toBeRemoved = Head;
+            Head = toBeRemoved.Next;
+            toBeRemoved.Previous = null;
+
+        }
+        public void RemoveLast()
+        {
+            Node toBeRemoved = Tail;
+            Tail = toBeRemoved.Previous;
+            toBeRemoved.Next = null;
+
+        }
     }
 }
