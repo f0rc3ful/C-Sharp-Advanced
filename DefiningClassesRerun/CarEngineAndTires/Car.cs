@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarEngineAndTires;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,6 +46,21 @@ namespace CarManufacturer
 			set { fuelConsumption = value; }
 		}
 
+		private Engine engine;
+
+		public Engine Engine
+		{
+			get { return engine; }
+			set { engine = value; }
+		}
+		private Tire[] tires;
+
+		public Tire[] Tires
+		{
+			get { return tires; }
+			set { tires = value; }
+		}
+
 		public Car()
 		{
 			this.Make = "VW";
@@ -68,7 +84,13 @@ namespace CarManufacturer
             this.FuelConsumption = fuelConsumption;
             this.FuelQuantity = fuelQuantity;
 		}
-		public void Drive(double distance)
+        public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption, Engine engine, Tire[] tires)
+            : this(make, model, year, fuelQuantity, fuelConsumption)
+        {
+            this.Engine = engine;
+            this.Tires = tires;
+        }
+        public void Drive(double distance)
 		{
 			if (FuelQuantity - distance * FuelConsumption > 0)
 			{
