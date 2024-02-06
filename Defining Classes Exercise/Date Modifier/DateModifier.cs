@@ -25,7 +25,6 @@ namespace Date_Modifier
 			{
 				return differenceInDays = Math.Abs((int)(firstDate - secondDate).TotalDays);
 			}
-			set { differenceInDays = value; }
 		}
 	}
 }
