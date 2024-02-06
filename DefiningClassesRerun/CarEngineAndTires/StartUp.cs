@@ -1,4 +1,4 @@
-﻿using CarEngineAndTires;
+﻿using CarManufacturer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +21,7 @@ namespace CarManufacturer
             var engine = new Engine(560, 6300);
 
             var car = new Car("Lamborghini", "Urus", 2010, 250, 9, engine, tires);
+            Console.WriteLine(car.Engine.CubicCapacity);
         }
     }
 }
