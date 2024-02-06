@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarManufacturer
+namespace CarEngineAndTires
 {
-    public class StartUp
+    internal class Engine
     {
-        static void Main()
-        {
-            
-        }
     }
 }

@@ -57,16 +57,16 @@ namespace CarManufacturer
 		public Car(string make, string model, int year)
 			: this()
 		{
-			Make = make;
-			Model = model;
-			Year = year;
+            this.Make = make;
+            this.Model = model;
+            this.Year = year;
 		}
 
 		public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption)
 			: this(make, model, year)
 		{
-			FuelConsumption = fuelConsumption;
-			FuelQuantity = fuelQuantity;
+            this.FuelConsumption = fuelConsumption;
+            this.FuelQuantity = fuelQuantity;
 		}
 		public void Drive(double distance)
 		{
