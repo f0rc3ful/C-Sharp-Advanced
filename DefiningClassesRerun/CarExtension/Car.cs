@@ -30,7 +30,41 @@ namespace CarManufacturer
 			get { return year; }
 			set { year = value; }
 		}
+		private double fuelQuantity;
 
+		public double FuelQuantity
+		{
+			get { return fuelQuantity; }
+			set { fuelQuantity = value; }
+		}
+		private double fuelConsumption;
+
+		public double FuelConsumption
+		{
+			get { return fuelConsumption; }
+			set { fuelConsumption = value; }
+		}
+		public void Drive(double distance)
+		{
+			if (FuelQuantity - distance * FuelConsumption > 0)
+			{
+				FuelQuantity -= distance * FuelConsumption;
+			}
+			else
+			{
+				Console.WriteLine("Not enough fuel to perform this trip");
+			}
+		}
+
+		public string WhoAmI()
+		{ 
+			StringBuilder sb = new StringBuilder();
+			sb.AppendLine($"Make: {Make}");
+            sb.AppendLine($"Model: {Model}");
+            sb.AppendLine($"Year: {Year}");
+            sb.AppendLine($"Fuel: {FuelQuantity:F2}");
+			return sb.ToString();
+        }
 
 	}
 }

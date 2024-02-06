@@ -14,13 +14,10 @@ namespace CarManufacturer
             car.Make = "Hyundai";
             car.Model = "Getz";
             car.Year = 2005;
-
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine(car.Make);
-            sb.AppendLine(car.Model);
-            sb.AppendLine(car.Year.ToString());
-
-            Console.WriteLine(sb);
+            car.FuelQuantity = 200;
+            car.FuelConsumption = 200;
+            car.Drive(2000);
+            Console.WriteLine(car.WhoAmI());
         }
     }
 }
