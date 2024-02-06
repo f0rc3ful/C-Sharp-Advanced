@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefiningClassesRerun", "DefiningClassesRerun\DefiningClassesRerun.csproj", "{D55F765E-A962-41B7-AC24-A9BE07E4E1B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "DefiningClassesRerun\Recursion.csproj", "{D55F765E-A962-41B7-AC24-A9BE07E4E1B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefiningClasses", "DefiningClasses\DefiningClasses.csproj", "{99C2D5A0-54CD-412E-A6D1-EB881130AF81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManufacturer", "01Car\CarManufacturer.csproj", "{EFEEDC3B-636E-473F-8B70-C8B097CC8667}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{D55F765E-A962-41B7-AC24-A9BE07E4E1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D55F765E-A962-41B7-AC24-A9BE07E4E1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D55F765E-A962-41B7-AC24-A9BE07E4E1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C2D5A0-54CD-412E-A6D1-EB881130AF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C2D5A0-54CD-412E-A6D1-EB881130AF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C2D5A0-54CD-412E-A6D1-EB881130AF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C2D5A0-54CD-412E-A6D1-EB881130AF81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFEEDC3B-636E-473F-8B70-C8B097CC8667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEEDC3B-636E-473F-8B70-C8B097CC8667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFEEDC3B-636E-473F-8B70-C8B097CC8667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEEDC3B-636E-473F-8B70-C8B097CC8667}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

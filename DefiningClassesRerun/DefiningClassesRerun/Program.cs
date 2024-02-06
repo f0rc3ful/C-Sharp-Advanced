@@ -10,10 +10,10 @@ class Program
 
     static void Counter(int n)
     {
-        ////if (n == 0)
-        ////{
-        ////    return;
-        ////}
+        if (n == 0)
+        {
+            return;
+        }
         Console.WriteLine(n);
         Counter(n - 1);
     }
