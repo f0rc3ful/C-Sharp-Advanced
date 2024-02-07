@@ -18,9 +18,9 @@ namespace CarManufacturer
                 string[] inputArr = input.Split(" ");
                 var tires = new Tire[4];
                 tires[0] = new Tire(int.Parse(inputArr[0]), double.Parse(inputArr[1]));
-                tires[0] = new Tire(int.Parse(inputArr[2]), double.Parse(inputArr[3]));
-                tires[0] = new Tire(int.Parse(inputArr[4]), double.Parse(inputArr[5]));
-                tires[0] = new Tire(int.Parse(inputArr[6]), double.Parse(inputArr[7]));
+                tires[1] = new Tire(int.Parse(inputArr[2]), double.Parse(inputArr[3]));
+                tires[2] = new Tire(int.Parse(inputArr[4]), double.Parse(inputArr[5]));
+                tires[3] = new Tire(int.Parse(inputArr[6]), double.Parse(inputArr[7]));
                 tiresList.Add(tires);
             }
 
@@ -49,7 +49,19 @@ namespace CarManufacturer
                 carsList.Add(car);
             }
 
+            carsList = carsList
+                .Where(car => car.Year >= 2017 && car.Engine.HorsePower > 330 && car.Tires.Sum(tire => tire.Pressure) >= 9 && car.Tires.Sum(tire => tire.Pressure) <= 10)
+                .ToList();
 
+            foreach (Car car in carsList)
+            {
+                car.Drive(20);
+                Console.WriteLine($"Make: {car.Make}");
+                Console.WriteLine($"Model: {car.Model}");
+                Console.WriteLine($"Year: {car.Year}");
+                Console.WriteLine($"HorsePowers: {car.Engine.HorsePower}");
+                Console.WriteLine($"FuelQuantity: {car.FuelQuantity}");
+            }
         }
     }
 }
