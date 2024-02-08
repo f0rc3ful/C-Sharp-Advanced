@@ -13,6 +13,9 @@ namespace FieldsPropertiesConstructorswNiki
             Person person1 = new Person("zara", -1);
             Console.WriteLine(person1.Name);
             Console.WriteLine(person1.Age);
+            Season autumn = Season.Autumn;
         }
     }
+
+    
 }

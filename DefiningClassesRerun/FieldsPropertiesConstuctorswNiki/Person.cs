@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace FieldsPropertiesConstructorswNiki
 {
+    public enum Season
+    { 
+        Spring, Summer, Autumn, Winter
+    }
     public class Person
     {
         private string name;
