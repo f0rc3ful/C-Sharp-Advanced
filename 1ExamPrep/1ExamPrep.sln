@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1ExamPrep", "1ExamPrep\1ExamPrep.csproj", "{1002C758-9A6F-4918-A4CF-4603296BDADC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1OffroadChallenge", "1ExamPrep\1OffroadChallenge.csproj", "{1002C758-9A6F-4918-A4CF-4603296BDADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2FishingCompetition", "2FishingCompetition\2FishingCompetition.csproj", "{17915F4D-D0CD-44E9-B92A-982F166C73EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1002C758-9A6F-4918-A4CF-4603296BDADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1002C758-9A6F-4918-A4CF-4603296BDADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1002C758-9A6F-4918-A4CF-4603296BDADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17915F4D-D0CD-44E9-B92A-982F166C73EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17915F4D-D0CD-44E9-B92A-982F166C73EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17915F4D-D0CD-44E9-B92A-982F166C73EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17915F4D-D0CD-44E9-B92A-982F166C73EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
