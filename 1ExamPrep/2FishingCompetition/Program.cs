@@ -96,7 +96,7 @@ class Program
                 {
                     if (char.IsDigit(matrix[posX, posY]))
                     {
-                        caught += (int)char.GetNumericValue(matrix[posX, posY]);
+                        caught += int.(matrix[posX, posY]);
                     }
                     matrix[posX, posY] = 'S';
                 }
