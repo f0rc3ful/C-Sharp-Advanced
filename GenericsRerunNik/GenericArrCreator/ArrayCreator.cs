@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericArrCreator
 {
-    public class ArrayCreator<T>
+    public static class ArrayCreator<T>
     {
         public static T[] Creator(int length, T item)
         {

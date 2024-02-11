@@ -34,13 +34,8 @@ namespace GenericBoxOfString
             return returned;
         }
 
-        public int Count
-        {
-            get 
-            {
-                return internalList.Count();
-            }
-        }
+        public int Count => internalList.Count;
+        
         public override string ToString()
         {
             return $"{typeof(T)}: {string.Join(", ", internalList)}";
