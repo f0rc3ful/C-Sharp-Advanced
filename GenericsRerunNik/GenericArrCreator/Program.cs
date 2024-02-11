@@ -10,7 +10,7 @@ namespace GenericArrCreator
     {
         static void Main()
         {
-            string[] array = ArrayCreator<string>.Creator(7,"Kolio");
+            string[] array = ArrayCreator<string>.Creator(7, "Kolio");
             Console.WriteLine(string.Join(", ", array));
         }
     }
