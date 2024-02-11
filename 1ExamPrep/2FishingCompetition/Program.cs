@@ -104,7 +104,6 @@ class Program
         }
         if (!(whirlpool))
         {
-            PrintMatrix(matrix);
             if (caught < 20)
             {
                 Console.WriteLine($"You didn't catch enough fish and didn't reach the quota! You need {20 - caught} tons of fish more.");
@@ -118,6 +117,7 @@ class Program
                 Console.WriteLine($"Success! You managed to reach the quota! ");
                 Console.WriteLine($"Amount of fish caught: {caught} tons.");
             }
+            PrintMatrix(matrix);
         }
 
     }
