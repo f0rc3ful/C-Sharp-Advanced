@@ -11,10 +11,10 @@ namespace ExerciseBoxOfString
         static void Main()
         {
             int lines = int.Parse(Console.ReadLine());
-            Box<string> box = new Box<string>();
+            Box<int> box = new Box<int>();
             for (int i = 0; i < lines; i++)
             {
-                box.values.Add(Console.ReadLine());
+                box.values.Add(int.Parse(Console.ReadLine()));
             }
             Console.WriteLine(box.ToString());
         }
