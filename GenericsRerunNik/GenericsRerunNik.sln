@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scale", "Scale\Scale.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseBoxOfString", "ExerciseBoxOfString\ExerciseBoxOfString.csproj", "{CAF8B9E7-AB68-437E-AEF1-9CF456CE141E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericSwapMethodStrings", "GenericSwapMethodStrings\GenericSwapMethodStrings.csproj", "{B40E4D89-D46B-4C28-99A2-8BC9A2733AFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CAF8B9E7-AB68-437E-AEF1-9CF456CE141E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAF8B9E7-AB68-437E-AEF1-9CF456CE141E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAF8B9E7-AB68-437E-AEF1-9CF456CE141E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40E4D89-D46B-4C28-99A2-8BC9A2733AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40E4D89-D46B-4C28-99A2-8BC9A2733AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40E4D89-D46B-4C28-99A2-8BC9A2733AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40E4D89-D46B-4C28-99A2-8BC9A2733AFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
