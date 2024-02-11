@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericBoxOfString", "GenericsRerunNik\GenericBoxOfString.csproj", "{8F568D27-5954-45F9-91AA-61C1FF14D4C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericArrCreator", "GenericArrCreator\GenericArrCreator.csproj", "{C3E47846-3E07-4AF9-AF41-875FB2B9FFD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8F568D27-5954-45F9-91AA-61C1FF14D4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F568D27-5954-45F9-91AA-61C1FF14D4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F568D27-5954-45F9-91AA-61C1FF14D4C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E47846-3E07-4AF9-AF41-875FB2B9FFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E47846-3E07-4AF9-AF41-875FB2B9FFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E47846-3E07-4AF9-AF41-875FB2B9FFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E47846-3E07-4AF9-AF41-875FB2B9FFD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
