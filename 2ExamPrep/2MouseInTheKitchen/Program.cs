@@ -146,7 +146,7 @@
             {
                 if (x + 1 == cols) // check if outside of cupboard
                 {
-                    Console.WriteLine("No more cheese for tonight");
+                    Console.WriteLine("No more cheese for tonight!");
                     break;
                 }
                 else if (matrix[x + 1, y] == '@') // check whether the next move is to be skipped
