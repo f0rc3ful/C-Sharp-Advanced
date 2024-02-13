@@ -29,7 +29,7 @@
             {
                 if (y - 1 < 0) // check if outside of cupboard
                 {
-                    Console.WriteLine("No more cheese for tonight");
+                    Console.WriteLine("No more cheese for tonight!");
                     break;
                 }
                 else if (matrix[x, y - 1] == '@') // check whether the next move is to be skipped
@@ -68,7 +68,7 @@
             {
                 if (y + 1 == cols) // check if outside of cupboard
                 {
-                    Console.WriteLine("No more cheese for tonight");
+                    Console.WriteLine("No more cheese for tonight!");
                     break;
                 }
                 else if (matrix[x, y + 1] == '@') // check whether the next move is to be skipped
@@ -107,7 +107,7 @@
             {
                 if (x - 1 < 0) // check if outside of cupboard
                 {
-                    Console.WriteLine("No more cheese for tonight");
+                    Console.WriteLine("No more cheese for tonight!");
                     break;
                 }
                 else if (matrix[x - 1, y] == '@') // check whether the next move is to be skipped
