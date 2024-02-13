@@ -62,7 +62,7 @@
 
     }
 
-    static void QueuePrinter(Queue<int> q) // tools
+    static void QueuePrinter(Queue<int> q) // toolss
     {
         Console.WriteLine($"Tools: {string.Join(", ", q)}");
     }
