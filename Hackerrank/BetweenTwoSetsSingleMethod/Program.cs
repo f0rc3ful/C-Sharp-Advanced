@@ -1,0 +1,86 @@
+﻿using System.Diagnostics.Metrics;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] a = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
+        int[] b = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
+        int result = BetweenTwoSets(a, b);
+        Console.WriteLine(result);
+    }
+
+    static int BetweenTwoSets(int[] a, int[] b)
+    {
+        int leastCommonMultiple = a[a.Length - 1];
+        bool loop1 = true;
+        while (loop1)
+        {
+            int counter = 0;
+            foreach (int value in a)
+            {
+                if (leastCommonMultiple % value == 0)
+                {
+                    counter++;
+                }
+                
+                if (counter == a.Length)
+                {
+                    loop1 = false;
+                    break;
+                }
+            }
+            if (loop1 == false)
+            {
+                break;
+            }
+            leastCommonMultiple++;
+        }
+
+        int greatestCommonDivisor = 0;
+        for (int divisor = b[b.Length - 1]; divisor >= 0; divisor--) // start from greatest value and approach 0
+        {
+            int counter = 0;
+            foreach (int value in b)
+            {
+                if (value % divisor == 0)
+                {
+                    counter++;
+                }
+            }
+            if (counter == b.Length)
+            {
+                greatestCommonDivisor = divisor;
+                break;
+            }
+        }
+
+        List<int> multiplesOfLCM = new List<int>();
+        for (int i = leastCommonMultiple; i <= greatestCommonDivisor; i++)
+        {
+            if (i % leastCommonMultiple == 0)
+            {
+                multiplesOfLCM.Add(i);
+            }
+        }
+
+        List<int> factorsOfGCD = new List<int>();
+        for (int j = greatestCommonDivisor; j >= leastCommonMultiple; j--)
+        {
+            if (greatestCommonDivisor % j == 0)
+            {
+                factorsOfGCD.Add(j);
+            }
+        }
+
+        int common = 0;
+        foreach (int value in factorsOfGCD)
+        {
+            if (multiplesOfLCM.Contains(value))
+            {
+                common++;
+            }
+        }
+        return common;
+    }
+}
