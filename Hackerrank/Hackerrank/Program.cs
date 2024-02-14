@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System.Diagnostics.Metrics;
+
+class Program
 {
     static void Main(string[] args)
     {
@@ -25,10 +27,15 @@
         }
 
         int common = 0;
-        foreach ()
-        { 
-        
+        foreach (int value in factorsOfGCD)
+        {
+            if (multiplesOfLCM.Contains(value))
+            {
+                common++;
+            }
         }
+
+        Console.WriteLine(common);
     }
 
     static int LeastCommonMultiple(int[] a)
