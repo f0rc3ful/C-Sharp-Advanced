@@ -3,10 +3,32 @@
     static void Main(string[] args)
     {
         int[] a = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
-        //int[] b = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
+        int[] b = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
         int leastCommonMultiple = LeastCommonMultiple(a);
-        //int greatestCommonDivisor = GreatestCommonDivisor(b);
-        Console.WriteLine(leastCommonMultiple);
+        int greatestCommonDivisor = GreatestCommonDivisor(b);
+        List<int> multiplesOfLCM = new List<int>();
+        for (int i = leastCommonMultiple; i <= greatestCommonDivisor; i++)
+        {
+            if (i % leastCommonMultiple == 0)
+            { 
+                multiplesOfLCM.Add(i);
+            }
+        }
+
+        List<int> factorsOfGCD= new List<int>();
+        for (int j = greatestCommonDivisor; j >= leastCommonMultiple; j--)
+        {
+            if (greatestCommonDivisor % j == 0)
+            { 
+                factorsOfGCD.Add(j);
+            }
+        }
+
+        int common = 0;
+        foreach ()
+        { 
+        
+        }
     }
 
     static int LeastCommonMultiple(int[] a)
