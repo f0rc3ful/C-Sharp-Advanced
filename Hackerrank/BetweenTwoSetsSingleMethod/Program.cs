@@ -4,15 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[] a = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
-        int[] b = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
+        List<int> a = Console.ReadLine().Split(" ").Select(int.Parse).ToList();
+        List<int> b = Console.ReadLine().Split(" ").Select(int.Parse).ToList();
         int result = BetweenTwoSets(a, b);
         Console.WriteLine(result);
     }
 
-    static int BetweenTwoSets(int[] a, int[] b)
+    static int BetweenTwoSets(List<int> a, List<int> b)
     {
-        int leastCommonMultiple = a[a.Length - 1];
+        int leastCommonMultiple = a[a.Count - 1];
         bool loop1 = true;
         while (loop1)
         {
@@ -24,7 +24,7 @@ class Program
                     counter++;
                 }
                 
-                if (counter == a.Length)
+                if (counter == a.Count)
                 {
                     loop1 = false;
                     break;
@@ -38,7 +38,7 @@ class Program
         }
 
         int greatestCommonDivisor = 0;
-        for (int divisor = b[b.Length - 1]; divisor >= 0; divisor--) // start from greatest value and approach 0
+        for (int divisor = b[b.Count - 1]; divisor >= 0; divisor--) // start from greatest value and approach 0
         {
             int counter = 0;
             foreach (int value in b)
@@ -48,7 +48,7 @@ class Program
                     counter++;
                 }
             }
-            if (counter == b.Length)
+            if (counter == b.Count)
             {
                 greatestCommonDivisor = divisor;
                 break;
