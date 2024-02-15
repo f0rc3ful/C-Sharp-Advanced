@@ -76,7 +76,7 @@ class Program
         int common = 0;
         foreach (int value in factorsOfGCD)
         {
-            if (multiplesOfLCM.Contains(value))
+            if (multiplesOfLCM.Contains(value)) // for each var in one of the lists, check if the other contains it
             {
                 common++;
             }
