@@ -55,7 +55,7 @@ class Program
             }
         }
 
-        List<int> multiplesOfLCM = new List<int>();
+        List<int> multiplesOfLCM = new List<int>(); 
         for (int i = leastCommonMultiple; i <= greatestCommonDivisor; i++)
         {
             if (i % leastCommonMultiple == 0)
@@ -64,7 +64,7 @@ class Program
             }
         }
 
-        List<int> factorsOfGCD = new List<int>();
+        List<int> factorsOfGCD = new List<int>(); // dividers
         for (int j = greatestCommonDivisor; j >= leastCommonMultiple; j--)
         {
             if (greatestCommonDivisor % j == 0)
