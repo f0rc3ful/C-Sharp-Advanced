@@ -5,7 +5,7 @@
         List<int> a = Console.ReadLine().Split(" ").Select(int.Parse).ToList();
         List<int> b = Console.ReadLine().Split(" ").Select(int.Parse).ToList();
         int output = BetweenTwoSets(a, b);
-        Console.WriteLine(output);
+        Console.WriteLine(output); 
     }
     static int BetweenTwoSets(List<int> a, List<int> b)
     {
@@ -41,5 +41,6 @@
         }
 
         return count;
+        // the fuck
     }
 }
