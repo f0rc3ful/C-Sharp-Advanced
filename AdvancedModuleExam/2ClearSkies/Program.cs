@@ -162,6 +162,6 @@ class Program
             sb.AppendLine();
         }
 
-        Console.WriteLine(sb.ToString());
+        Console.WriteLine(sb.ToString());  
     }
 }
