@@ -19,9 +19,9 @@
         }
         if (foodEaten >= 4)
         {
-            Console.WriteLine($"Gluttony of the day!");
+            Console.WriteLine($"Gluttony of the day! Henry ate {foodEaten} foods.");
         }
-        if (foodEaten > 0)
+        else if (foodEaten > 0)
         {
             if (foodEaten == 1)
             {
