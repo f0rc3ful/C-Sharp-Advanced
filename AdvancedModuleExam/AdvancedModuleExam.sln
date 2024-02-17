@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1ChickenSnackProblem", "AdvancedModuleExam\1ChickenSnackProblem.csproj", "{E4D04706-A9EB-49AD-8CEE-395698E5402C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1ChickenSnackProblem", "AdvancedModuleExam\1ChickenSnackProblem.csproj", "{E4D04706-A9EB-49AD-8CEE-395698E5402C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2ClearSkies", "2ClearSkies\2ClearSkies.csproj", "{0A043338-4006-489A-9E69-E6E58438316E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2ClearSkies", "2ClearSkies\2ClearSkies.csproj", "{0A043338-4006-489A-9E69-E6E58438316E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3SharkTaxonomy", "3\3SharkTaxonomy.csproj", "{53DDE5F6-79A4-48EA-A318-BEB7BF727B5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0A043338-4006-489A-9E69-E6E58438316E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A043338-4006-489A-9E69-E6E58438316E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A043338-4006-489A-9E69-E6E58438316E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53DDE5F6-79A4-48EA-A318-BEB7BF727B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53DDE5F6-79A4-48EA-A318-BEB7BF727B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53DDE5F6-79A4-48EA-A318-BEB7BF727B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53DDE5F6-79A4-48EA-A318-BEB7BF727B5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
